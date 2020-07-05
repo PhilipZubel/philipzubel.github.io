@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap");
+
+.bg-black{
+    background-color: black;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: #5da35b;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #afceae;
+}
+
+
+/* sticky navbar */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:1;
+  }
+
+.home-view {
+    background-image: url("home_picture.jpg");
+    height:620px;
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+}
+
+.home-text {
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    padding-left: 65%;
+    padding-top: 18%;
+    user-select: none;
+}
+
+section header{
+    padding-top: 55px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 36px;
+    font-weight: bold;
+    color: #3c9438;
+}
+
+.aboutme-view{
+    padding-top: 25px;
+    padding-bottom: 80px;
+}
+
+.aboutme-content{
+    margin: 50px 40px 20px 30px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #cccccc;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.glasgow_uni_pic{
+    max-width: 500px;
+    height: auto;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+
+#cv_button{
+    margin: 20px 65px 20px 20px;
+    padding: 5px 15px 5px 15px;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    letter-spacing: 0.1em;
+    color: #6ea36c; /* Text color */
+    background-color: transparent; /* Remove background color */
+    border: 2px solid #6ea36c; /* Border thickness, line style, and color */
+    border-radius: 5px; /* Adds curve to border corners */
+    transition: 1s all ease;
+    overflow: hidden;
+    outline: none;
+}
+
+
+#cv_button:hover{
+    background-color: #6ea36c; /* Text color */
+    color:black;
+    transition: all 0.6s ease;
+    border: 2px solid green;
+}
+
+.email-label{
+    color: #99ddee;
+    font-family: monospace;
+    padding-left: 5px;
+}
+
+
+.skill-title{
+    padding-top: 20px !important;
+    font-size: 24px;
+    background: -webkit-linear-gradient(#6699ff, #66ff99);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 10px;
+}
+
+.skill-label{
+    padding: 20px;
+    margin: 20px 20px 15px 20px;
+    width: 140px;
+    color:black;
+    font-size: 18px;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    border-radius:12px;
+    background: linear-gradient(to top right, #66ff99 0%, #6699ff 100%);
+}
+
+.skill-label:hover{
+    background: linear-gradient(to top right, #99ff99 0%, #99ccff 100%);
+}
+
+#projects{
+    min-height:700px;
+}
+
+
+.img-gallery{
+    opacity: 0.8;
+    border: 8px solid white;
+    border-radius: 10px;
+    transition:0.3s all ease-out;
+}
+
+.img-gallery:hover{
+    opacity: 1;
+    border-width: 3px;
+    border-color: #99ddee;
+    cursor: pointer;
+    margin-bottom: 1px;
+}
+
+figcaption{
+    margin-left: 8px;
+    font-family: monospace;
+    color: white;
+    cursor: default;
+}
+
+
+#contactme{
+    text-align: center;
+    color:#99ddee;
+    font-family: 'Inconsolata', monospace;
+    font-size:24px;
+}
+
+#inputEmail[type=text] {
+    width:50%;
+    min-width: 300px;
+    margin: 5px 0;
+    padding: 6px 10px;;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    color:white;
+    background-color: transparent;
+    border: 2px solid #99ddee;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s all ease;
+  }
+
+#inputEmail[type=text]:hover, #inputEmail[type=text]:focus{
+    border: 2px solid #3c9438;
+    margin: 1px 0;
+    padding: 10px 10px;
+    width: 55%;
+    min-width: 330px;
+}
+
+#inputMessage[type=text]{
+    width:60%;
+    min-width: 300px;
+    margin: 5px 0;
+    padding: 6px 10px;
+    font-size: 20px;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    color:white;
+    background-color: transparent;
+    border: 3px solid #99ddee;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.3s all ease;
+}
+
+#inputMessage[type=text]:hover, #inputMessage[type=text]:focus{
+    width: 65%;
+    min-width: 330px;
+    margin: 2px 0;
+    border: 2px solid #3c9438;
+    padding: 10px 10px;
+}
+
+.inputlabel-margin{
+    padding-top: 30px;
+    letter-spacing: 0.08em;
+}
+
+#buttonSubmit{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 6px 10px;
+    width: 8%;
+    min-width: 80px;
+    font-size: 20px;
+    color:black;
+    background-color: #99ddee;
+    border: 2px solid #3c9438;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#buttonSubmit:hover{
+    width:10%;
+    min-width: 100px;
+    padding: 7px 10px;
+    background-color: #3c9438;
+    border-radius: 7px;
+    border-color: #99ddee;
+}
+
+
+#contact-section{
+    min-height:500px;
+}
+
+
+

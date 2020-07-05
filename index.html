@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <title>
+        Resume
+    </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+</html>
+<body style="background-color: black;">
+<header>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black sticky" id="navbar1">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav navbar-inline navbar-nav ml-auto">
+            <li class="nav-item mr-sm-2">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item mr-sm-2">
+                <a class="nav-link" href="#aboutme">About me</a>
+            </li>
+            <li class="nav-item mr-sm-2">
+                <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <!--
+            <li class="nav-item mr-sm-5">
+                <a class="nav-link" href="#contactme">Contact me</a>
+            </li>
+            -->
+          </ul>
+        </div>
+      </nav>
+</header>
+
+<section class="main-content bg-black" data-target="#navbar1" data-offset="0">
+    
+    <section id="home" class="home-view">
+        <h1 class="home-text">Hi, <br> I'm Philip Zubel</h1>
+    </section>
+
+    <section id="aboutme" class="aboutme-view">
+        <header>
+            About me
+        </header>
+        
+        <div class="container aboutme-content">
+            <div class="row">
+              <div class="col-6">
+                <article>
+                    <p> &nbsp &nbsp Hi! I am a 2nd year student at University of Glasgow. 
+                        I am pursuing a degree in computing science and mathematics and 
+                        I am on track to receive a 1st. I am a motivated student who is interested in acquiring 
+                        knwoledge about the latest technologies. During my studies I completed computing courses 
+                        reagarding python programming language, relational databases, HCI and assembly. I also have 
+                        experience using Java as well as technologies related to web development. I am 
+                        interested in securing an internship. If you are hiring, please send me an email at 
+                        <i>zubel.philip@gmail.com</i>.  
+                        </p>
+                </article>
+              </div>
+              <div class="col-6">
+                <picture>
+                    <img class="glasgow_uni_pic center " src="glasgow_uni_pic.jpg" alt="Glasgow University">
+                </picture>
+                <button id="cv_button" type="submit" onclick="window.open('CV.pdf')" download>CV download</button>
+                <label>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="#99ddee" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                  </svg>
+                  <label class=email-label>zubel.philip@gmail.com</label>
+                </label>
+              </div>
+            </div>
+          </div>
+        
+        
+        <section>
+            <header class="skill-title">
+                Skills:
+            </header> 
+            <div class="container-fluid ">
+                <label class="skill-label">Python</label>
+                <label class="skill-label">Java</label>
+                <label class="skill-label">HTML</label>
+                <label class="skill-label">CSS</label>
+                <label class="skill-label">Django</label>
+                <label class="skill-label">Bootstrap</label>
+                <label class="skill-label">MySQL</label>
+                <label class="skill-label">Assembly</label>
+            </div> 
+        </section>
+        
+    </section>
+    
+
+    <section id="projects">
+        <header class="projects-label" style="margin-bottom: 35px;">
+            Projects
+        </header>
+        <section>
+            <div class="row text-center text-lg-left container-fluid">
+                <div class="col-lg-4 col-6">
+                    <a class="d-block h-80" style="margin:0px 25px 0px 25px">
+                        <figure style="width: 384px; height: 250px;">
+                            <a href="https://github.com/PhilipZubel/rental_income_website.github.io">
+                                <img class="img-fluid img-gallery" src="project_pictures/renatlincomecalculator_img.PNG" alt="">
+                            </a>
+                            <figcaption>Rental Income Calculator Website</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-6">
+                    <a class="d-block mb-4 h-100" style="margin:0px 25px 0px 25px">
+                        <figure style="width: 384px; height: 250px;">
+                            <a href="https://github.com/PhilipZubel/philipzubel.github.io">
+                                <img class="img-fluid img-gallery"  src="project_pictures/resume.PNG" alt="">
+                            </a>
+                            <figcaption>Resume Website</figcaption>
+                        </figure>
+                    </a>
+                </div>
+
+
+              </div>
+        </section>
+    </section>
+    <!--
+    <section id="contactme" class="contact-border">
+        <header>
+            Contact me
+        </header>
+        <section id="contact-section">
+           
+                <form action="/your-name/" method="post">
+                <div class="inputlabel-margin"><label for="inputEmail">Email:</label></div>
+                <div><input type="text" class="form-label" id="inputEmail" placeholder="example_email@gmail.com"></div>
+                <div class="inputlabel-margin"><label for="inputMessage">Message:</label></div>
+                <div><textarea type="text" class="form-label" id="inputMessage" rows="5" placeholder="Type your message here..."></textarea></div>
+                <div><button type="submit" value='OK' class="btn btn-success" id="buttonSubmit" >Send</button></div>
+            </form>
+           
+            <div class="email-label"><label>Email:</label></div>
+            
+        </section>
+    </section>
+    -->
+</section>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+
+</body>
