@@ -132,6 +132,10 @@ section header{
     min-height:700px;
 }
 
+.img-center{
+    display: block;
+    margin: 0 auto;
+}
 
 .img-gallery{
     opacity: 0.8;
