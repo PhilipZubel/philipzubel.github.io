@@ -93,7 +93,10 @@ section header {
   line-height: 1.6;
 }
 
-.glasgow_uni_pic {
+.coder-img {
+  display: block;
+  margin: auto;
+  max-width: 600px;
   width: 100%;
   height: auto;
 }
@@ -112,9 +115,9 @@ section header {
   font-size: 20px;
   font-family: "Inconsolata", monospace;
   letter-spacing: 0.1em;
-  color: #6ea36c; /* Text color */
+  color: #99ddee; /* Text color */
   background-color: transparent; /* Remove background color */
-  border: 2px solid #6ea36c; /* Border thickness, line style, and color */
+  border: 2px solid #99ddee; /* Border thickness, line style, and color */
   border-radius: 5px; /* Adds curve to border corners */
   transition: 1s all ease;
   overflow: hidden;
@@ -122,15 +125,16 @@ section header {
 }
 
 #cv_button:hover {
-  color: #99ddee;
-  border: 2px solid #99ddee;
+  color: #6ea36c;
+  border: 2px solid #6ea36c;
   transition: all 0.6s ease;
 }
 
 .email-label {
-  color: #99ddee;
+  color: #62d45f;
   font-family: monospace;
   padding-left: 5px;
+  cursor: text;
 }
 
 .skill-title {
@@ -295,7 +299,21 @@ figcaption div {
   }
 }
 
-@media (max-width: 1152px) {
+@media (min-width: 607px) and (max-width: 992px) {
+  .contact-elements {
+    justify-content: center !important;
+  }
+}
+
+@media (max-width: 607px) {
+  .contact-elements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1152px) {
   .contact-elements {
     display: flex;
     flex-direction: column;
