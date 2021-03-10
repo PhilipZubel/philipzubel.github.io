@@ -281,6 +281,10 @@ header nav .search input {
     padding-top: 100px;
   }
 
+  .header-closed {
+    display: none;
+  }
+
   header {
     position: auto;
     height: 110px;
@@ -290,17 +294,20 @@ header nav .search input {
   header nav {
     background: #6744ab;
     display: block;
+    visibility: hidden;
     width: 85%;
     position: absolute;
     top: 0px;
     bottom: 0px;
-    right: -85%;
+    /* right: -85%; */
+    right: 0%;
     z-index: 2;
     padding: 46px 50px;
     transition: 0.5s right;
   }
 
   header nav.open {
+    visibility: visible;
     right: 0%;
   }
 
@@ -311,10 +318,6 @@ header nav .search input {
 
   header .logo h2 {
     color: white;
-  }
-
-  header nav {
-    background: #7148c4;
   }
 
   header nav ul li {

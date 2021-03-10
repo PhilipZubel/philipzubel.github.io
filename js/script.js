@@ -1,8 +1,10 @@
 const hamburger = document.querySelector(".hamb");
 const navLinks = document.querySelector(".nav-list");
+//const header = document.getElementsByTagName("header")[0];
 
 hamburger.addEventListener("click", function() {
 	navLinks.classList.toggle("open");
+  // header.classList.toggle(".header-closed")
 })
 
 const mediaQuery = window.matchMedia('(max-width: 880px)')
