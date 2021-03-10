@@ -1,0 +1,372 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  width: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #fefefe;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/*ends base*/
+
+.container {
+  width: 1280px;
+  max-width: 97%;
+  margin: 0 auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+}
+
+/*ends basic*/
+
+.hero {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  background: #5026a3;
+  position: relative;
+}
+
+.header {
+  position: fixed; /* comment out and sidebar works*/
+}
+
+header {
+  z-index: 9999;
+  background: #492199;
+  opacity: 0.9;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+header .logo {
+  margin-left: 3%;
+  width: 25%;
+}
+
+header .logo h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: rgb(60, 209, 1);
+}
+
+header nav {
+  width: 90%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: left;
+  align-items: center;
+  position: fixed;
+}
+
+header nav ul {
+  margin-left: auto;
+  list-style: none;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-weight: 600;
+  padding: 0px 15px 0px 5px;
+  margin-right: 5px;
+  border-bottom: 1px solid transparent;
+  position: relative;
+  transition-duration: 0.3s;
+  transition-property: color, border-bottom;
+}
+
+header nav ul li:not(.active) a:after {
+  content: "";
+  border: 1px solid transparent;
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  right: 100%;
+  transition-duration: 0.3s;
+  transition-property: right;
+  transition-timing-function: ease-in;
+}
+
+header nav ul li:not(.active) a:hover:after {
+  border: 1px solid rgb(0, 150, 0);
+  right: 0;
+}
+
+header nav ul li.active a {
+  border-bottom: 2px solid rgb(0, 150, 0);
+  color: rgb(0, 150, 0);
+}
+
+header .nav-icon a {
+  font-size: 24px;
+  color: #e7e7e7;
+  margin-left: 15px;
+  transition: 0.3s color;
+}
+
+header .nav-icon a:hover {
+  color: rgb(0, 190, 0);
+}
+/* 
+header nav .search {
+  margin-left: 25px;
+  width: 200px;
+  position: relative;
+}
+
+header nav .search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid rgb(0, 150, 0);
+  padding: 5px 40px 10px 5px;
+  color: #fff;
+  position: relative;
+  transition: 0.3s border-bottom;
+} */
+
+/* header nav .search input:hover {
+  border-bottom: 2px solid rgb(0, 190, 0);
+} */
+
+/* header nav .search i {
+  font-size: 14px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  z-index: 1;
+} */
+
+.hero .banner:first-child {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.hero .banner {
+  padding-top: 50px;
+}
+
+.hero .banner .container {
+  max-width: 92%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero .banner .details,
+.hero .banner .cover {
+  flex: 1;
+}
+
+.header .navlist .logo {
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0px 2px 2px #333);
+  animation: slide 1s ease;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.hero .banner .details h1 {
+  font-size: 42px;
+  line-height: 1.1;
+  letter-spacing: 0.15rem;
+}
+
+.hero .banner .details p {
+  max-width: 450px;
+  margin: 20px 0px 25px;
+  letter-spacing: 1px;
+}
+
+.hero .banner .details .btn {
+  z-index: 1;
+  background: rgb(0, 150, 0);
+  color: #0a0643;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  padding: 18px 55px;
+  border-radius: 30px;
+  transition: 0.3s box-shadow;
+}
+
+.hero .banner .details .btn:hover {
+  box-shadow: 0px 0px 5px rgb(0, 150, 0), 0px 0px 15px rgb(0, 190, 0);
+}
+
+/*now we're going to make it mobile friendly*/
+
+@media screen and (max-width: 930px) {
+  .hero .banner {
+    padding-top: 80px;
+  }
+  .hero .banner .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero .banner .details {
+    margin-bottom: 50px;
+  }
+  .hero .banner .details h1 {
+    font-size: 35px;
+  }
+  .hero .banner .details .btn {
+    padding: 12px 38px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .hamb {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+    position: absolute;
+    top: 40px;
+    right: 3%;
+    z-index: 4;
+  }
+  .hamb span {
+    width: 100%;
+    height: 3px;
+    display: block;
+    background: #fff;
+  }
+  .hamb span:nth-child(2) {
+    margin: 7px 0px;
+  }
+
+  .hero .banner:first-child {
+    padding-top: 100px;
+  }
+
+  header {
+    position: auto;
+    height: 110px;
+    opacity: 1;
+  }
+
+  header nav {
+    background: #6744ab;
+    display: block;
+    width: 85%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: -85%;
+    z-index: 2;
+    padding: 46px 50px;
+    transition: 0.5s right;
+  }
+
+  header nav.open {
+    right: 0%;
+  }
+
+  header .logo {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  header .logo h2 {
+    color: white;
+  }
+
+  header nav {
+    background: #7148c4;
+  }
+
+  header nav ul li {
+    display: block;
+  }
+
+  header nav ul li a {
+    display: block;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0px;
+    margin-right: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-bottom: none;
+  }
+
+  header nav ul li a:focus,
+  header nav ul li a:hover {
+    color: rgb(0, 190, 0);
+  }
+
+  header nav ul li:not(.active) a:after {
+    border: none;
+  }
+
+  header nav ul li:not(.active) a:hover:after {
+    border: none;
+  }
+
+  header nav ul li.active a {
+    border-bottom: none;
+  }
+
+  header .nav-icon {
+    visibility: hidden;
+  }
+  /* header nav .search {
+    visibility: hidden;
+  }
+
+  header nav .search input {
+    visibility: hidden;
+    font-size: 16px;
+    padding: 5px 40px 20px 10px;
+    color: #fff;
+  }
+
+  header nav .search input:focus,
+  header nav .search input:hover {
+    visibility: hidden;
+    border-bottom: 2px solid green;
+  } */
+}
